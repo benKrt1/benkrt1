@@ -14,7 +14,7 @@
 
 ### 👋 About
 
-I drive a delivery truck for a living, and I have since 2019. Logistics, deadlines, and no tolerance for things that break at 4am. The code happens in the hours around that job, and it gets held to the same standard.
+I run a taxi company, **JenBen Transport AB**, and I drive a delivery truck for **Menigo Foodservice AB**. Logistics, deadlines, and no tolerance for things that break at 4am. The code happens in the hours around both, and it is held to the same standard.
 
 I finished the **Front End Developer** programme at Jensen Education, the **Codecademy Full Stack Developer** career path, and a cloud/DevOps internship at **NationDev** that ended in an Applied Tech Diploma. I don't build tutorials. I build things with auth, payments, a database that holds real data, and a deploy pipeline behind them.
 
