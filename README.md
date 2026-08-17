@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <a href="https://arbenkrt.vercel.app/sv"><img src="https://img.shields.io/badge/Portfolio-arbenkrt.vercel.app-0A0A0A?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"></a>
+  <a href="https://arbenkrt.se"><img src="https://img.shields.io/badge/Portfolio-arbenkrt.vercel.app-0A0A0A?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"></a>
   <a href="https://linkedin.com/in/YOUR-HANDLE"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
   <img src="https://img.shields.io/badge/Open%20to-Junior%20Full--Stack%20Roles-2ea44f?style=for-the-badge" alt="Open to work">
 </p>
