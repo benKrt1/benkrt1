@@ -101,5 +101,5 @@ Live departures and delay statistics from Trafikverket's open data. Parses their
 Secrets go in environment variables. `.gitignore` gets written before the first commit, not after the leak. Tests mock the network so they still pass on a train. If I don't understand something I take it apart until I do — that's the same instinct that had me rebuilding engines before it had me reading stack traces.
 
 <p align="center">
-  <sub>Byggd i Stockholm. Open to opportunities — <a href="https://arbenkrt.vercel.app/sv">arbenkrt.vercel.app</a></sub>
+  <sub>Byggd i Stockholm. Open to opportunities — <a href="https://arbenkrt.se">arbenkrt.se</a></sub>
 </p>
