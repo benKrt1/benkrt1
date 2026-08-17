@@ -34,7 +34,7 @@ I'm finishing the **Full-Stack Engineer program at JENSEN komvux** and shipping 
 
 A live booking platform built around a timezone-aware availability engine — interval math, lead-time buffers and time-off blocks, all covered by unit tests. Admin dashboard for schedule, services and time-off management, automated email confirmations with ICS calendar attachments, and full English/Swedish internationalization with locale routing. ~3k lines of TypeScript, deployed on Vercel.
 
-#### 🧾 minbiz.se — multi-tenant SaaS for small businesses *(in development)*
+#### 🧾 [minbiz.se] — multi-tenant SaaS for small businesses *(in development)*
 `Next.js App Router` `TypeScript` `PostgreSQL` `Prisma` `Better Auth` `Stripe` `next-intl`
 
 Business administration for small Swedish firms in their own language. Employment contract and quote generation as PDFs, accounting integrations (Fortnox), and an articles section explaining Swedish tax rules. Postgres with Row-Level Security for tenant isolation, decimal types for VAT and amounts, four-language i18n architecture from day one, GDPR-aware EU hosting.
