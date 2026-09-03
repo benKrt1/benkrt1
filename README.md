@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://www.arbenkrt.se"><img src="https://img.shields.io/badge/Portfolio-arbenkrt.se-0A0A0A?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"></a>
-  <a href="https://www.linkedin.com/in/arben-k-3216633a6/"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <a href="https://www.linkedin.com/in/arbenkrt/"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
   <a href="mailto:arbenkurti42@gmail.com"><img src="https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
   <img src="https://img.shields.io/badge/Open%20to-Junior%20Full--Stack%20Roles-2ea44f?style=for-the-badge" alt="Open to work">
 </p>
@@ -19,7 +19,7 @@ I still drive a delivery truck full time. The code started in the hours around t
 
 I also own a small transport company. That is how I know what small-business paperwork actually costs you, and it is the reason MinBiz exists.
 
-- 🚀 **Live in production:** [minbiz.se](https://minbiz.se) — multi-tenant SaaS for Swedish trade businesses, and [Atelier Eri](https://eris-nails.vercel.app), a booking platform running a real Stockholm studio's schedule
+- 🚀 **Deployed and live:** [minbiz.se](https://minbiz.se) — my own multi-tenant SaaS for Swedish trade businesses, currently in public beta, and [Atelier Eri](https://eris-nails.vercel.app), a booking platform built to a real brief from a Stockholm nail studio
 - ☁️ **Cloud:** AWS with CloudFormation and Terraform — infrastructure as code, not console clicking
 - 🧪 **Testing:** Vitest and pytest behind CI, because the invariant belongs in the database and the proof belongs in a test
 - 🌍 I work in **Swedish and English**, and grew up with **Albanian and Greek**
@@ -29,19 +29,19 @@ I also own a small transport company. That is how I know what small-business pap
 
 ### 📌 Selected work
 
-#### 🧾 [MinBiz](https://minbiz.se) — multi-tenant B2B SaaS
+#### 🧾 [MinBiz](https://minbiz.se) — multi-tenant B2B SaaS · personal project, public beta
 `Next.js 15` `TypeScript` `Supabase (Postgres + RLS + Auth)` `Stripe` `Google Gemini` `Vitest` `GitHub Actions`
 
-Live on its own domain for Swedish trade businesses: a quote is accepted by the customer from a public link without an account, becomes an invoice, and the VAT period comes out ready for Skatteverket — with ROT/RUT deduction modelled in.
+A product of my own, deployed on its own domain and currently in public beta for Swedish trade businesses — built end-to-end, not yet opened to paying customers. A quote is accepted by the customer from a public link without an account, becomes an invoice, and the VAT period comes out ready for Skatteverket — with ROT/RUT deduction modelled in.
 
 Tenant isolation is enforced in Postgres by **row-level security** rather than in the application layer, with a role plus seven permission booleans per user. Plan limits live in both the code and a migration, and a test compares the two so the pricing page and the database cannot drift apart. **430 Vitest tests** run behind a GitHub Actions pipeline — `tsc → lint → tests → build`. Four locales (sv · en · el · sq), with GDPR export, deletion requests and retention purges built in.
 
 > 🔒 Private repo — it holds customer and business data I can't publish. Happy to walk through the code in an interview.
 
-#### 🗓️ [Atelier Eri](https://eris-nails.vercel.app) — production booking SaaS · [source](https://github.com/benKrt1/ErisNails)
+#### 🗓️ [Atelier Eri](https://eris-nails.vercel.app) — booking platform · [source](https://github.com/benKrt1/ErisNails)
 `Next.js 16` `TypeScript` `Supabase (Postgres + RLS + Auth)` `date-fns-tz` `Resend` `next-intl` `Vitest`
 
-A booking platform for a one-person nail studio in Stockholm that was losing appointments to Instagram DMs. Nobody maintains a list of free times — availability is **derived on request** from her weekly hours, minus time off, minus what is already booked.
+A booking platform built to a real brief from a one-person nail studio in Stockholm that was losing appointments to Instagram DMs — deployed and live. Nobody maintains a list of free times — availability is **derived on request** from her weekly hours, minus time off, minus what is already booked.
 
 Double-booking is impossible by construction: a Postgres **exclusion constraint over a `tstzrange`** rejects overlapping confirmed bookings, so two concurrent requests for the same slot cannot both succeed. The invariant lives in the database, not in an application check that races. The engine itself is one pure function over half-open intervals, which is what puts DST-shifting days and partial time-off under unit tests instead of manual clicking.
 
